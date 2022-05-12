@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbor Kim Portfolio</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font.css">
+
+    <style>
+        .theme-default,.projects-list {
+            --h1Font: "Poppins";
+            --h1Color: #3a3a3a;
+            --h1Weight: bold;
+            --h1Style: normal;
+            
+    
+                --h1Size: 16px;
+                --h1Height: 25px;
+            --h2Font: "Poppins";
+            --h2Color: #1A1A1A;
+            --h2Weight: bold;
+            --h2Style: normal;
+            
+    
+                --h2Size: 48px;
+                --h2Height: 53px;
+            --p1Font: "Open Sans";
+            --p1Color: #3a3a3a;
+            --p1Weight: normal;
+            --p1Style: normal;
+            
+    
+                --p1Size: 16px;
+                --p1Height: 20px;
+            --projectTitleFont: "Poppins";
+            --projectTitleColor: #ffffff;
+            --projectTitleWeight: 700;
+            --projectTitleStyle: normal;
+            
+    
+            --projectSubTitleFont: "Open Sans";
+            --projectSubTitleColor: #ffffff;
+            --projectSubTitleWeight: normal;
+            --projectSubTitleStyle: normal;
+            
+    
+            --buttonFont: "Poppins";
+            --buttonColor: #3D3D3D;
+            --buttonWeight: normal;
+            --buttonStyle: normal;
+            --borderColor: #3D3D3D33;
+    
+                --buttonSize: 16px;
+                --buttonHeight: 21px;
+    
+            --projectTitleSize: 20px;
+            --projectTitleHeight: 23px;
+            --projectSubTitleSize: 16px;
+            --projectSubTitleHeight: 19px;
+        }
+        .ufo--portfolio-page.theme_eight .ufo--user-projects-list .project .project-name .project-title {--projectTitleColor: #ffffff;}    
+    
+        .ufo--portfolio-page.theme_eight .ufo--user-projects-list .project .project-name .project-subtitle {--projectSubTitleColor: #ffffff;}    
+    
+        .profile-footer {--buttonFont: Poppins; --buttonColor: #3D3D3D;}    
+    
+        .ufo--portfolio-page.theme_eight .ufo--user-projects-list .project .project-name .project-title {--h2Color: #424242;}    
+    
+        .ufo--portfolio-page.theme_eight .ufo--user-projects-list .project .project-name .project-subtitle {--p1Color: #586165;}    
+    
+        @media (min-width: 768px) {
+            .theme-default, .projects-list {
+                --h1Size: 18px;
+                --h1Height: 35px;
+                --h2Size: 68px;
+                --h2Height: 75px;
+                --p1Size: 18px;
+                --p1Height: 29px;
+                --projectTitleSize: 26px;
+                --projectTitleHeight: 29px;
+                --projectSubTitleSize: 18px;
+                --projectSubTitleHeight: 25px;
+                --buttonSize: 14px;
+                --buttonHeight: 17px;
+            }
+        }
+    
+        @media (min-width: 1025px) {
+            .projects-list .project .project-name .project-title {
+                        color: var(--projectTitleColor) !important;
+                    }        
+        }        
+        
+        @media (min-width: 1025px) {
+             .projects-list .project .project-name .project-subtitle {
+                        color: var(--projectSubTitleColor) !important;
+                    }       
+        }        
+    
+        .ufo--about-page .ufo--about-header .back {--p1Color: #3a3a3a;}        
+    
+        .ufo--case-study-container, .ufo--about-header .about-title .title {
+                --h1Font: "Poppins";
+                --h1Color: #424242;
+                --h1Weight: bold;
+                --h1Style: normal;
+    
+                    --h1Size: 24px;
+                    --h1Height: 28px;
+                --h2Font: "Poppins";
+                --h2Color: #424242;
+                --h2Weight: normal;
+                --h2Style: normal;
+    
+                    --h2Size: 28px;
+                    --h2Height: 30px;
+                --h3Font: "Poppins";
+                --h3Color: #3A3A3A;
+                --h3Weight: bold;
+                --h3Style: normal;
+    
+                    --h3Size: 17px;
+                    --h3Height: 19px;
+                --h4Font: "Poppins";
+                --h4Color: #586165;
+                --h4Weight: normal;
+                --h4Style: normal;
+    
+                    --h4Size: 16px;
+                    --h4Height: 16px;
+                --p1Font: "Open Sans";
+                --p1Color: #586165;
+                --p1Weight: normal;
+                --p1Style: normal;
+    
+                    --p1Size: 16px;
+                    --p1Height: 1.5; 
+                --p2Font: "Open Sans";
+                --p2Color: #586165;
+                --p2Weight: normal;
+                --p2Style: italic;
+    
+                    --p2Size: 16px;
+                    --p2Height: 1.5; 
+        }
+    
+        @media (min-width: 576px) {
+            .ufo--about-header .about-title .title {
+                --h3Size: 25px;
+                --h3Height: 28px;
+                --p1Size: 18px;
+                --p1Height: 21px;
+            }
+        }
+    
+        @media (min-width: 768px) {
+            .ufo--case-study-container,
+            .ufo--about-header .about-title .title {
+                --h1Size: 60px;
+                --h1Height: 69px;
+                --h2Size: 40px;
+                --h2Height: 43px;
+                --h3Size: 24px;
+                --h3Height: 27px;
+                --h4Size: 20px;
+                --h4Height: 23px;
+                --p1Size: 16px;
+                --p1Height: 27px;
+                --p2Size: 16px;
+                --p2Height: 21px;
+            }
+        }
+    
+    
+    </style>
+
+    <style>
+        .ufo--case-study-container, .ufo--about-header .about-title .title{
+            --h1Font: "Poppins";
+            --h1Color: #424242;
+            --h1Weight: bold;
+            --h1Style: normal;
+    
+                --h1Size: 24px;
+                    --h1Height: 28px;
+            --h2Font: "Poppins";
+            --h2Color: #424242;
+            --h2Weight: normal;
+            --h2Style: normal;
+    
+                --h2Size: 28px;
+                    --h2Height: 30px;
+            --h3Font: "Poppins";
+            --h3Color: #3A3A3A;
+            --h3Weight: bold;
+            --h3Style: normal;
+    
+                --h3Size: 17px;
+                    --h3Height: 19px;
+            --h4Font: "Poppins";
+            --h4Color: #586165;
+            --h4Weight: normal;
+            --h4Style: normal;
+    
+                --h4Size: 16px;
+                    --h4Height: 16px;
+            --p1Font: "Open Sans";
+            --p1Color: #586165;
+            --p1Weight: normal;
+            --p1Style: normal;
+    
+                --p1Size: 16px;
+                    --p1Height: 1.5; 
+            --p2Font: "Open Sans";
+            --p2Color: #586165;
+            --p2Weight: normal;
+            --p2Style: italic;
+    
+                --p2Size: 16px;
+                    --p2Height: 1.5; 
+        }
+    
+        @media (min-width: 576px) {
+            .ufo--about-header .about-title .title{
+                --h3Size: 25px;
+                --h3Height: 28px;
+                --p1Size: 18px;
+                --p1Height: 21px;
+            }
+        }
+    
+        @media (min-width: 768px) {
+            .ufo--case-study-container,
+            .ufo--about-header .about-title .title
+     {
+                --h1Size: 60px;
+                --h1Height: 69px;
+                --h2Size: 40px;
+                --h2Height: 43px;
+                --h3Size: 24px;
+                --h3Height: 27px;
+                --h4Size: 20px;
+                --h4Height: 23px;
+                --p1Size: 16px;
+                --p1Height: 27px;
+                --p2Size: 16px;
+                --p2Height: 21px;
+            }
+        }
+    
+
+        .ufo--cta-btn-wr .btn--cta {
+            --ctaButtonSize: 14px;
+            --ctaButtonFont: Mulish;
+            --ctaButtonColor: #424242;
+            --ctaButtonHeight: 17px;
+            --ctaButtonWeight: 800;
+            --ctaButtonStyle: normal;
+            --strokeStrength: 1px;
+            --strokeColor: #586165    
+        }    
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="portfolio-page theme_eight">
+            <div class="container">
+                <div class="theme-default">
+                    <div class="page-navbar">
+                        <!--<div class="navbar-id">Harbor Kim</div>-->
+                        <div class="navbar-container">
+                            <div class="name">Harbor Kim</div>
+                            <div class="navbar-item selected" data-text="Home">
+                                <a href="#" class="btn active">Home</a>
+                            </div>
+                            <div class="navbar-item" data-text="About">
+                                <a href="#" class="btn">About</a>
+                            </div>
+                            <div class="navbar-item" data-text="Contact">
+                                <a href="#" class="btn">Contact</a>
+                            </div>
+                            <div class="navbar-item" data-text="CV">
+                                <a href="https://storage.googleapis.com/uxfolio/61ad4c0b9dfa17000322ec87/cv/Jiinkim_CV_KpV.pdf" target="_blank" rel="nofollow noopener" class="btn">CV</a>
+                            </div>
+                            <div class="navbar-item" data-text="Linkedin">
+                                <a href="https://www.linkedin.com/in/harbor-kim-28164b216/" target="_blank" rel="nofollow noopener" class="btn">Linkedin</a>
+                            </div>
+                        </div>
+                        <div class="navbar-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="page-content" style="height: 400px;">
+                        <div class="page-bio view full-w">
+                             <div class="page-bio-text">
+                                <h2 style="text-align: left;">
+                                    <strong>Hi there!</strong>
+                                </h2>
+                                <h2 style="text-align: left;">
+                                    <strong>I’m Harbor Kim</strong>
+                                </h2>
+                                <p style="text-align: left;">
+                                    I enjoy using data to create user-centric experiences that make people’s lives better and more enjoyable.
+                                </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="home-page-content">
+                    <div class="user-projects-list">
+                        <div class="page-sections">
+                            <div class="project_editor">
+                                <div class="project-wrapper">
+                                    <section id="section-10" class="study-section" style="padding-top: 0px;  padding-bottom: 100px;">
+                                        <div class="container-fluid">
+                                            <div class="user-projects">
+                                                <div class="projects-list">
+                                                    <a href="#" class="thumbnail">
+                                                        <div class="project-name">
+                                                            <div class="project-title">Dream Job CV</div>
+                                                            <div class="project-subtitle">Dream Job CV</div>
+                                                        </div>
+                                                        <div class="image-container " style>
+                                                            <img src="https://storage.googleapis.com/uxfolio/61ad4c0b9dfa17000322ec87/61ad4f549dfa17000322ec89/cYcMlKubxrXm4oTZ.png" class="project-thumbnail">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function navigateToPage(page) {
+                    let currentLocation = location.href.replace(location.search, "").replace('/p/', '/');
+                    window.location = currentLocation + (currentLocation[currentLocation.length - 1] === '/' ? '' : '/') + (page ? page : '');
+                }
+                function navigateToProject(projectUrl) {
+                    var location = window.location.origin;
+                    location += projectUrl;
+                    window.location.href = location;
+                }
+                function ctaIntNavigation(page) {
+                    let currentLocation = location.href.replace(location.search, "");
+                    currentLocation = currentLocation.lastIndexOf("/") === currentLocation.length -1
+                        ? currentLocation.substring(0, currentLocation.lastIndexOf('/'))
+                        : currentLocation;
+            
+                        window.location = currentLocation + page;
+                }
+            
+                document.querySelector('.navbar-toggle').onclick = function() {
+                    this.classList.toggle('on');
+                    document.querySelector('.container').classList.toggle('on');
+                    document.querySelector('body').classList.toggle('nav-on');
+                }
+            </script>
+        </div>
+    </main>
+</body>
+</html>
